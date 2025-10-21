@@ -1,0 +1,180 @@
+/* Navbar */
+.navBg {
+  background-color: var(--bg-primary-color);
+}
+
+.icons{
+  width: 30px;
+}
+
+
+.lupa {
+  font-size: 1.2rem;  
+
+}
+
+/* Links del navbar (vista web) */
+.navBg .nav-link {
+  color: var(--primary-text);
+  font-size: 1.2rem;  
+
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: var(--primary-text);          
+  background-color: transparent;   
+
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:active,
+.navBg .nav-link:hover,
+.navBg .nav-link:focus,
+.navBg .nav-link:active,
+.ancla:hover,
+.ancla:focus,
+.ancla:active
+{
+  color: var(--primary-text);
+  font-weight: 500;
+}
+
+/* Buscadores */
+.search {
+  background-color: #65606030;
+  height: 40px;
+  width: 100%;  
+  
+}
+
+.search .search-input {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  width: 190px; 
+}
+
+@media (max-width: 1500px) {
+  .search .search-input {    
+    width: 100%;
+  }
+}
+
+.navBg .search-input:focus,
+.sidebar-collapse {
+  background-color: transparent; 
+  box-shadow: none;             
+  border-color: transparent;    
+  outline: none;                 
+}
+@media (max-width: 1500px) {
+  .navBg .search-input:focus {
+    background-color: transparent; 
+    box-shadow: none;             
+    border-color: transparent;    
+    outline: none;             
+  }
+}
+
+@media (max-width: 1500px) {
+  .sidebar-collapse .search-input:focus {
+    background-color: transparent; 
+    box-shadow: none;             
+    border-color: transparent;    
+    outline: none;         
+  }
+}
+
+
+
+/*Ancla */
+.ancla{
+  text-decoration: none;
+  color: var(--primary-text);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1500px) {
+  .ancla {
+    font-size: 1rem;
+    margin-left: 7px;
+    padding-block: 10px; 
+  }
+}
+
+.ancla:focus{
+  background-color: transparent; 
+  box-shadow: none;             
+  border-color: transparent;    
+  outline: none;         
+}
+
+
+/* Links del sidebar móvil */
+.sidebar-links .nav-link {
+  color: var(--primary-text);  
+  margin-bottom: 0.8rem;
+  padding-block: 0.8rem;
+  
+  
+}
+
+.sidebar-collapse .dropdown-menu .dropdown-item {
+  color: var(--primary-text);
+  background-color: transparent;
+  
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:active,
+.sidebar-links .nav-link:hover,
+.sidebar-links .nav-link:focus,
+.sidebar-links .nav-link:active
+.ancla{
+  color: var(--primary-text);
+  font-weight: 500;
+}
+
+/* Botón cerrar (X) */
+.btn-close-custom {
+  background: none;
+  border: none;
+  color: var(--primary-text);
+  padding: 0;
+  
+}
+
+
+/* Sidebar */
+
+.sidebar-collapse {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: var(--bg-primary-color);  
+  transition: left 0.3s ease;
+  z-index: 1100; /* lo pongo alto porque sino el mapa de infovivienda se queda por arriba y no entcuentro que hace que eso ocurra */
+  padding: 1rem;
+}
+
+.sidebar-collapse.show {
+  left: 0;
+}
+
+/* Overlay */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+

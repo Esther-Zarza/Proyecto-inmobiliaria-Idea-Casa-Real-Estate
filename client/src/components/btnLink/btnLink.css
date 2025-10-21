@@ -1,0 +1,25 @@
+.btn-link {
+  background: transparent;
+  border: none;
+  padding: 6px 10px;
+  position: relative;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-link:hover {
+  color: #120690;
+}
+
+.btn-link.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 3px;
+  background: #120690;
+  border-radius: 2px;
+}

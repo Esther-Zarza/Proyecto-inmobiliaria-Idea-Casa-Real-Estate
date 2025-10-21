@@ -1,0 +1,17 @@
+.card-price-blue {
+  background-color: var(--primary-color);
+}
+
+.card-price-red {
+  background-color: var(--color-icons);
+}
+
+
+.card-editProperties-phone .address-truncate {
+  display: block;
+  width: 100%;
+  max-width: 18rem;
+  white-space: wrap;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+}

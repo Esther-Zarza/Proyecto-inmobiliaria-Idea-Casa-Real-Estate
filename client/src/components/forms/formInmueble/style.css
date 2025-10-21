@@ -1,0 +1,26 @@
+.formInmuebles{
+    width: 40%;
+}
+
+.accordion-body{
+  background-color: var(--bg-primary-color);
+}
+
+.reset-btn {
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  &:active {
+    filter: brightness(0.9);
+    transform: scale(0.96);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .formInmuebles {
+    width: 90%;
+  }
+
+}

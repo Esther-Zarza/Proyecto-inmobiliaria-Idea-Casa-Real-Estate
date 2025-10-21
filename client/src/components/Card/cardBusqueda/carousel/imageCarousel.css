@@ -1,0 +1,56 @@
+.ic-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.ic-carousel,
+.ic-carousel .carousel-inner,
+.ic-carousel .carousel-item,
+.ic-carousel img {
+  width: 100%;
+  height: 100%;
+}
+
+.ic-carousel img {
+  object-fit: cover;
+  display: block;
+}
+
+.ic-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  border: none;
+  background: rgba(0,0,0,.35);
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .2s ease;
+  color: white;
+}
+.ic-wrapper:hover .ic-nav { opacity: 1; }
+.ic-prev { left: 8px; }
+.ic-next { right: 8px; }
+
+.ic-ribbon {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 4;
+  clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%);
+  color: var(--secondary-text);
+  font-weight: bold;
+  padding: .5rem 1.2rem;
+  padding-inline-end: 1.7rem;
+}
+.ic-ribbon.blue { background: var(--primary-color); }
+.ic-ribbon.red  { background: var(--color-icons); box-shadow: 2px 2px 5px 1px black; }

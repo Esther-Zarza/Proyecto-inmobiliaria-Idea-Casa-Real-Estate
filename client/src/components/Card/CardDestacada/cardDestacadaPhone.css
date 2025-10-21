@@ -1,0 +1,119 @@
+.card-highlight-phone {
+  width: 200%;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 5px 1px var(--secondary-color-btn);
+  padding: 0;
+  height: 25rem;
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .card-image-phone {
+    position: relative;
+    height: 90%;
+
+    img {
+      position: absolute;
+      top: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      object-fit: cover;
+    }
+
+    .fav-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 2;
+      padding: 0;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
+      }
+
+      .empty {
+        font-size: 24px;
+        color: #ffffff;
+      }
+
+      .full {
+        font-size: 24px;
+        color: var(--color-icons);
+      }
+    }
+
+    .card-price-blue {
+      position: absolute;
+      top: 20px;
+      z-index: 1;
+      clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%);
+      background-color: var(--primary-color);
+      color: var(--secondary-text);
+      font-weight: bold;
+      padding: 0.5rem 1.2rem;
+      padding-inline-end: 1.7rem;
+      box-shadow: 2px 2px 5px 1px black;
+    }
+
+    .card-price-red {
+      position: absolute;
+      top: 10px;
+      z-index: 1;
+      clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%);
+      background-color: var(--color-icons);
+      color: var(--secondary-text);
+      font-weight: bold;
+      padding: 0.5rem 1.2rem;
+      padding-inline-end: 1.7rem;
+      box-shadow: 2px 2px 5px 1px black;
+    }
+
+    .card-info {
+      background-color: #fafafaa3;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  .card-title {
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.card-image:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.card-decripcion-phone {
+  color: var(--tertiary-text);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 1;
+  padding-inline: .5rem;
+  max-height: 6rem;
+}

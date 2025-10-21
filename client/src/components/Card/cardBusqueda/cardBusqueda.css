@@ -1,0 +1,136 @@
+.card-search {
+  display: flex;
+  width: 100%;
+  max-width: 60rem;
+  height: 20rem;
+  background-color: var(--bg-primary-color);
+  border-radius: 12px;
+  box-shadow: 0 0 5px 1px var(--secondary-color-btn);
+
+  p {
+    margin: 0;
+  }
+
+  .card-title {
+  margin-right: 30px;
+}
+
+
+  .card-image {
+    position: relative;
+    flex: 1 1 250px;
+    width: 30%;
+    height: 100%;
+
+    img {
+      position: absolute;
+      top: 0;
+      min-width: 256px;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      object-fit: cover;
+    }
+
+    .card-price-blue {
+      position: absolute;
+      top: 10px;
+      z-index: 1;
+      clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%);
+      background-color: var(--primary-color);
+      color: var(--secondary-text);
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      padding-inline-end: 1.7rem;
+    }
+
+    .card-price-red {
+      position: absolute;
+      top: 10px;
+      z-index: 1;
+      clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%);
+      background-color: var(--color-icons);
+      color: var(--secondary-text);
+      font-weight: bold;
+      padding: 0.5rem 1.2rem;
+      padding-inline-end: 1.7rem;
+      box-shadow: 2px 2px 5px 1px black;
+    }
+  }
+
+  .card-body {
+    padding: 0.5rem 1rem;
+    flex: 2 1 350px;
+    width: 70%;
+    position: relative;
+
+    .card-title {
+      max-width: 475px;
+    }
+
+    .fav-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 2;
+      padding: 0;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
+      }
+
+      .empty {
+        font-size: 24px;
+        color: black;
+      }
+
+      .full {
+        font-size: 24px;
+        color: #c20000;
+      }
+    }
+
+    .card-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #000000;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .card-price {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    .card-info {
+      background-color: #fafafa7c;
+      width: 100%;
+      /* max-width: 100px; */
+    }
+
+    .card-description {
+      color: var(--tertiary-text);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      line-clamp: 4;
+      max-width: 450px;
+    }
+
+    .btn-edit {
+      width: fit-content;
+    }
+  }
+}

@@ -1,0 +1,195 @@
+.carousel-custom {
+  height: 30vh;
+  overflow: visible;
+  position: relative;
+}
+
+.carousel-custom .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-vivienda{
+  padding-right: 12rem;
+}
+
+@media (max-width: 600px) { 
+  .info-vivienda{
+    padding-right: -12rem;
+  }
+
+}
+
+
+/* COLORES Y TEXTOS */
+.fondoAzul {
+  background-color: var(--primary-color);
+}
+
+.descripcion-vivienda {
+  white-space: pre-line;
+  background-color: var(--bg-primary-color);
+}
+
+.feature-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  width: 22px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.carousel-item {
+  border: none;
+}
+
+
+ul.list-unstyled li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+span {
+  font-weight: bolder;
+}
+
+.color-icons {
+  background-color: #b00003;
+}
+
+.certificado-energetico {
+  width: 350px;
+}
+
+hr {
+  width: 100%;
+}
+
+.btn-edit-infovivienda {
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+
+/* TARJETA DATOS DE CONTACTO */
+
+.section-map {
+  width: 95%;
+}
+
+
+.contacto {
+  position: fixed;
+  top: 50%;
+  right: 170px;
+  transform: translateY(-50%);
+  width: 150px;
+  z-index: 999;
+
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+/* CARRUSEL WEB */
+.carousel-container {
+  max-height: 520px;
+}
+
+.carousel-img {
+  height: 520px;
+  object-fit: contain;
+}
+
+/* IMG PEQUEÑAS */
+.thumbnail-img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.thumbnail-btn:hover .thumbnail-img {
+  border-color: var(--primary-color);
+}
+
+.thumbnail-active .thumbnail-img {
+  border-color: var(--primary-color);
+}
+
+/*  ICONO DE FAVORITOS */
+.icon-fav {
+  color: gray;
+  transition: color 0.3s ease;
+}
+
+.bi-heart-fill {
+  color: #b00003;
+}
+
+/* ======== RESPONSIVE ======== */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .info-vivienda {
+    margin-right: 0;
+    padding-inline: 3rem;
+  }
+
+  .certificado-energetico {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* MOVIL */
+@media (max-width: 576px) {
+  .info-vivienda {
+    padding-inline: 1rem;
+  } 
+
+  .carousel-inner img {
+    height: 250px !important;
+    object-fit: cover;
+  }
+
+  .fondoAzul {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .descripcion-vivienda p {
+    font-size: 0.95rem;
+  }
+
+  .map-wrap,
+  .form-card {
+    min-height: 300px;
+  }
+
+  ul.list-unstyled li {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+/* OCULTAR TABLET Y MÓVIL */
+@media (max-width: 1800px) {
+  .contacto {
+    display: none ;
+  }
+
+
+}
+

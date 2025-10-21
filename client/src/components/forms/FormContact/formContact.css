@@ -1,0 +1,13 @@
+
+@media (max-width: 768px) {
+  .form-mt{
+     margin-top: 1rem;
+  }
+ 
+}
+
+@media (max-width: 600px) {
+  .input-mb{
+    padding-top: 1rem;
+  }
+}

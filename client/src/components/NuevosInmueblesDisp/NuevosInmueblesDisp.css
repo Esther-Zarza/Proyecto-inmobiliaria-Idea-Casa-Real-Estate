@@ -1,0 +1,49 @@
+.new-estates-phone {
+  background-color: var(--bg-primary-color);
+
+  }
+  
+
+  .slider-wrapper {
+    display: flex;
+    justify-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    gap: 2rem;
+    padding: 1rem .5rem;
+    
+  }
+
+  .slider-items{
+    min-width: 90vw;
+  }
+
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+
+    a {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: var(--secondary-color-btn);
+    }
+
+    .inactive {
+      background-color: var(--secondary-color-btn);
+    }
+
+    .active {
+      background-color: var(--primary-color);
+    }
+  }
+
+
+
+}
+
+
+

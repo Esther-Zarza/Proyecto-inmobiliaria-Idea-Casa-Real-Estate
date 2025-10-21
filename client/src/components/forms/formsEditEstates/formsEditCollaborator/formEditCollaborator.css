@@ -1,0 +1,39 @@
+table {
+  box-sizing: 0;
+  th {
+    background-color: #d4d9dc;
+  }
+  tr:nth-child(even) {
+    background-color: #d4d9dc;
+  }
+  tr:nth-child(odd) {
+    background-color: var(--bg-primary-color);
+  }
+  td {
+    padding: 0.5rem;
+  }
+}
+
+.error-filter-collab {
+  padding: 2rem;
+  text-align: center;
+  color: #000000;
+}
+
+.search-input {
+  width: 50%;
+}
+
+@media (max-width: 650px) {
+  .search-input {
+    width: 100%;
+  }
+  
+  .assigned {
+    margin-top: 2rem;
+  }
+}
+
+.colab {
+  min-height: 35rem;
+}

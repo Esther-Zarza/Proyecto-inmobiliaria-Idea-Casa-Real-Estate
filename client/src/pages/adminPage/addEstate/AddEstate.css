@@ -1,0 +1,122 @@
+/* .section-addEstate{
+  background-image: linear-gradient(rgba(0, 0, 0, .6)), url('/images/bg/bg-form.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 10rem;
+} */
+
+.section-addEstate {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+    url('/images/bg/bg-form.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 3rem;
+  width: 100%;
+  min-height: 100vh;
+
+  .white {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+  }
+  .weight {
+    font-weight: bolder;
+  }
+
+  .check-price {
+    padding-block-start: 2.3rem;
+
+    @media (max-width: 650px) {
+      padding-block-start: 0;
+    }
+  }
+}
+
+
+/* BOTONES */
+@media (max-width: 1140px) {
+  .form-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: stretch;
+    padding-inline: 1rem;
+    row-gap: 0;
+
+    button {
+      border: solid 1.5px #3b3b3bc4;
+    }
+  }
+
+  /* PESTAÑAS - responsive */
+  .form-btns button:nth-child(-n + 4) {
+    margin-top: -8px;
+    z-index: 0;
+    transform: translateY(8px);
+    padding-block-end: 18px;
+  }
+
+  .form-btns button:nth-child(n + 5) {
+    border-bottom: 2px solid transparent;
+    border-radius: 8px 8px 0 0;
+    z-index: 1;
+  }
+}
+
+/* TABLET */
+@media (max-width: 991px) {
+  .property_form {
+    padding: 1.5rem;
+  }
+
+  .form-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: stretch;
+    padding-inline: 1rem;
+  }
+
+  .form-container .row-1 {
+    flex-direction: column;
+  }
+}
+
+/* MÓVIL */
+@media (max-width: 650px) {
+  .property_form {
+    padding: 1rem;
+  }
+
+  .form-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+    padding-inline: 1rem;
+  }
+
+  .form-btns button:nth-child(-n + 6) {
+    margin-top: -8px;
+    z-index: 0;
+    transform: translateY(8px);
+    padding-block-end: 18px;
+  }
+
+  .form-btns button:nth-child(n + 7) {
+    border-bottom: 2px solid transparent;
+    border-radius: 8px 8px 0 0;
+    z-index: 1;
+  }
+
+  .form-container .row {
+    flex-direction: column;
+  }
+
+  .form-container .col {
+    width: 100%;
+  }
+
+  .form-container input,
+  .form-container textarea,
+  .form-container select {
+    font-size: 1rem;
+  }
+}

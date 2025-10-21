@@ -1,0 +1,47 @@
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <title>Nueva petición de contacto</title>
+  </head>
+
+  <body>
+    <main style="font-size:200px">
+      <h2>Hola,<span style=" color: blue;"> IdeaCasa</span></h2>
+      <br>
+      <p>¡Tienes una nueva solicitud para ${contactType}!</p>
+      <p>El mensaje recibido desde el formulario de contacto de tu sitio web,
+        contiene los siguientes datos de contacto:
+
+      <div>
+        <span style="font-weight: bolder;">- Tipo de servicio
+          ${contactType}</span>
+        <br>
+        <span style="font-weight: bolder;">- Nombre:</span> ${name}
+        <br>
+        <span style="font-weight: bolder;">-Apellidos:</span> ${lastName}
+        <br>
+        <span style="font-weight: bolder;">- Correo electrónico:</span> ${email}
+        <br>
+        <span style="font-weight: bolder;">- Teléfono:</span> ${phone}
+        <br>
+        <span style="font-weight: bolder;">- Detalles del asunto:</span>
+        ${details}
+
+      </div>
+      ${contactType}
+
+      Por favor, responde a la brevedad si es necesario.</p>
+      <p style="font-size:12px; color:#555; margin-top:20px;">
+        Este correo fue generado automáticamente desde el formulario de
+        contacto.
+      </p>
+      <img src="/images/logos/logo-navbar.png" alt="">
+    </main>
+  </body>
+
+</html>

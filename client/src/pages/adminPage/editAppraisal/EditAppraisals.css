@@ -1,0 +1,39 @@
+.section-editAppraisal {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+    url('/images/bg/bg-form.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 3rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.filtros-admin {
+  padding: .5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-check {
+  background-color: #d7d7d7;
+  padding: .5rem 1rem;
+  border-radius: 12px;
+}
+
+.title-edit {
+  width: 18rem;
+}
+
+.address-edit {
+  width: 12rem;
+}
+
+.error-filter {
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.btn-editar {
+  height: 3rem;
+}

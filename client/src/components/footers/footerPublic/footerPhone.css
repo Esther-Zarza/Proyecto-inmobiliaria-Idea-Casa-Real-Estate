@@ -1,0 +1,33 @@
+.footerPhone {
+  font-size: 15px;  
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    background-color: var(--bg-primary-color);
+  }
+
+  span {
+    font-weight: bolder;
+  }
+  a {
+    text-decoration: none;
+    color: var(--black-color);
+  }
+
+  .footer-bottom-phone {
+    text-align: center;
+    font-size: 12px;
+    color: var(--tertiary-text);
+  }
+
+  .footer-logo-img-phone {
+    width: 200px;
+    
+  }
+
+ .icons-phone .bi{
+  font-size: 20px;
+
+  }
+}
+

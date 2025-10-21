@@ -1,0 +1,21 @@
+.mobile-view-edit-appraisals {
+  display: none;
+  @media (max-width: 1000px) {
+    display: block;  
+    width: 98%;  
+  }
+    .error-filter {
+      height: 100vh;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+      font-size: 1.5rem;
+    }
+  
+}
+
+ @media (max-width: 768px) {
+    p{
+      margin-bottom: 0;
+    }   
+  }

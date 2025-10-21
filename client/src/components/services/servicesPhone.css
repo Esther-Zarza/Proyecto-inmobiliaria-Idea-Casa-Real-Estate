@@ -1,0 +1,92 @@
+.mobile-view {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.section-services-phone{
+  background-color: var(--bg-primary-color);
+  padding-top: 3rem;
+  @media (max-width: 768px) {
+    h2{
+     padding-bottom: 16px; 
+      
+    }
+    .line-title{
+      padding-block: 8px;
+    }
+  }
+}
+
+.section-services-phone-slider {
+  margin: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+
+  .texto-phone {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.9)
+    );
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    span {
+      padding-block-end: 1rem;
+    }
+  }
+}
+.slider {
+  max-width: 800px;
+  width: 100%;
+}
+
+.div-img-phone {
+  position: relative;
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  
+}
+.images {
+  display: flex;
+  aspect-ratio: 1/1;
+  border-radius: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.images img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+
+  a {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+  }
+
+  .inactive-bg{
+    background-color: var(--secondary-color-btn);
+  }
+
+  .active-bg{
+    background-color: var(--primary-color);
+  }
+}

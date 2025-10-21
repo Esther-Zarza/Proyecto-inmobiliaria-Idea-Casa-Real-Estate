@@ -1,0 +1,84 @@
+.card-MyProperties {
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+
+  .info {
+    width: 100%;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .card-image {
+    position: relative;
+    width: 20rem;
+    height: 13rem;
+
+    img {
+      position: absolute;
+      top: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      object-fit: cover;
+    }
+
+    .card-price-blue {
+      position: absolute;
+      top: 10px;
+      z-index: 1;
+      clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%);
+      background-color: var(--primary-color);
+      color: var(--secondary-text);
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      padding-inline-end: 1.7rem;
+    }
+
+    .card-price-red {
+      position: absolute;
+      top: 10px;
+      z-index: 1;
+      clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%);
+      background-color: var(--color-icons);
+      color: var(--secondary-text);
+      font-weight: bold;
+      padding: 0.5rem 1.2rem;
+      padding-inline-end: 1.7rem;
+      box-shadow: 2px 2px 5px 1px black;
+    }
+  }
+
+  .card-body {
+    padding-inline: 0.7rem;
+    height: 100%;
+
+    .title {
+      font-weight: bold;
+      color: #000000;
+    }
+
+    .card-info {
+      background-color: #fafafa7c;
+      width: 100%;
+    }
+  }
+
+  span {
+    font-weight: bolder;
+  }
+
+  .buttons-myProperties {
+    height: 100%;
+
+    button {
+      width: fit-content;
+    }
+  }
+      
+  
+}

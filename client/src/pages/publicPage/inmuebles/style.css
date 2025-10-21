@@ -1,0 +1,32 @@
+.contentMainPaginacionInmueble{
+    width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .contentMainInmuebles {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .paginacionInmuebles {
+    flex-direction: column;
+  }
+
+  .contentMainPaginacionInmueble {
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  .orderFormInmuebles{
+    margin-top: 1em;
+  }
+
+  .btnOperacionesInmuebles{
+    width: 100%;
+    padding: 0 1em;;
+  }
+
+  .contentTopBtnInmuebles h2{
+    font-size: 1.3rem;
+  }
+}

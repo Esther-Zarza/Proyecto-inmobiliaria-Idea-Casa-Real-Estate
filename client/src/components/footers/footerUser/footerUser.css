@@ -1,0 +1,17 @@
+.footerUser {
+  background-color: var(--bg-primary-color);
+  color: var(--primary-text);
+  padding: 20px;
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+

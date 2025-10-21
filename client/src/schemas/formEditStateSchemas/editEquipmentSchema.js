@@ -1,0 +1,33 @@
+import { z } from "zod";
+
+export const editEquipmentSchema = z.object({
+  air_conditioning: z.boolean().optional(),
+  alarm: z.boolean().optional(),
+  high_standing: z.boolean().optional(),
+  furished: z.boolean().optional(),
+  built_in_wardrobes: z.boolean().optional(),
+  bbq: z.boolean().optional(),
+  chimney: z.boolean().optional(),
+  furnished_kitchen: z.boolean().optional(),
+  equiped_kitchen: z.boolean().optional(),
+  outdoors: z.boolean().optional(),
+  rustic_farm: z.boolean().optional(),
+  independent: z.boolean().optional(),
+  garden: z.boolean().optional(),
+  community_garden: z.boolean().optional(),
+  laundry_room: z.boolean().optional(),
+  bright: z.boolean().optional(),
+  parking: z.boolean().optional(),
+  parking_space: z.boolean().optional(),
+  private_pool: z.boolean().optional(),
+  community_pool: z.boolean().optional(),
+  porch: z.boolean().optional(),
+  automatic_door: z.boolean().optional(),
+  sunny: z.boolean().optional(),
+  underfloor_heating: z.boolean().optional(),
+  terrace: z.boolean().optional(),
+  storage_room: z.boolean().optional(),
+  turistic: z.boolean().optional(),
+  sea_views: z.boolean().optional(),
+  mountain_views: z.boolean().optional()
+});

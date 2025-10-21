@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <title>Solicitud de valoración</title>
+  </head>
+
+  <body>
+    <main style="font-size:200px">
+      <div class="container">
+
+        <h2>Hola,<span style=" color: blue;"> IdeaCasa</span></h2>
+        <br>
+        <p>¡Tienes una nueva valoración de vivienda!</p>
+        <p>El mensaje recibido desde el formulario de contacto de tu sitio web,
+          contiene los siguientes datos en la valoración </p>
+
+        <div style="display:flex; padding-inline: 3rem;">
+          <div>
+            <h3><span style="padding-inline: 3rem;">Datos personales</span></h3>
+            <p><span style="font-weight: bolder;">Nombre:</span> ${user_name}</p>
+            <p><span style="font-weight: bolder;">Apellidos: </span>${user_last_name}</p>
+            <p><span style="font-weight: bolder;">Email:</span> ${email}</p>
+            <p><span style="font-weight: bolder;">Teléfono:</span> ${user_phone}</p>
+          </div>
+          <div>
+            <h3>Datos necesarios</h3>
+            <p><span style="font-weight: bolder;">Habitaciones:
+              </span>${bedroomss}</p>
+            <p><span style="font-weight: bolder;">Baños:</span> ${toilets}</p>
+            <p><span style="font-weight: bolder;">Referencia Catastral:</span>
+              ${catastral_reference}</p>
+            <p><span style="font-weight: bolder;">Reformado:</span> ${formatRemodeled(remodeled)}</p>
+            <hr>
+          </div>
+        </div>
+
+        <div>
+          <h3>Dirección</h3>
+          <p><span style="font-weight: bolder;">Tipo de vía:</span> ${type_via}
+          </p>
+          <p><span style="font-weight: bolder;">Nombre de vía:
+            </span>${street_name}</p>
+          <p><span style="font-weight: bolder;">Número:</span> ${street_number}
+          </p>
+          <p><span style="font-weight: bolder;">Bloque:</span> ${block}</p>
+          <p><span style="font-weight: bolder;">Escalera:</span> ${stairs}</p>
+          <p><span style="font-weight: bolder;">Planta:</span> ${floor}</p>
+          <p><span style="font-weight: bolder;">Puerta:</span> ${door}</p>
+          <p><span style="font-weight: bolder;">C.P.:</span> ${zip_code}</p>
+          <p><span style="font-weight: bolder;">Ciudad:</span> ${city}</p>
+          <p><span style="font-weight: bolder;">Municipio:</span>
+            ${municipality}</p>
+          <p><span style="font-weight: bolder;">Localidad:</span> ${locality}
+          </p>
+          <p><span style="font-weight: bolder;">Urbanización:</span>
+            ${urbanization}</p>
+          <p><span style="font-weight: bolder;">Observaciones:</span>
+            ${street_observation}</p>
+        </div>
+
+        <p style="font-size:12px; color:#555; margin-top:20px;">
+          Este correo fue generado automáticamente desde el formulario de
+          solicitud de valoración.
+        </p>
+      </div>
+    </main>
+  </body>
+
+</html>
